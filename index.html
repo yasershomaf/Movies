@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>'Movies</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Movies</h1>
+            <form>
+                <input type="text" placeholder="Enter your search word here" id="searchWord" >
+                <button type="button" onclick='searchFunction(document.getElementById("searchWord").value, 1)'>Search</button>
+            </form>
+        </header>
+        <main id="mainContainer">
+        </main>
+        <footer id="footer">
+            <button type="button" onclick='searchFunction(document.getElementById("searchWord").value, 1)'>&#8920</button>
+            <button type="button" onclick="nextPage(-10)">&#8810</button>
+            <button type="button" onclick="nextPage(-1)">&lt;</button>
+            <h5 id="totalText"></h5>
+            <button type="button" onclick="nextPage(1)">&gt;</button>
+            <button type="button" onclick="nextPage(10)">&#8811</button>
+            <button type="button" onclick='searchFunction(document.getElementById("searchWord").value, pagesTotal)'>&#8921</button>
+        </footer>
+        <script src="file.js"></script>
+    </body>
+</html>
