@@ -12,6 +12,7 @@ header, footer {
 h1, h2, h3, h4 {
     width: 100%;
     text-align: center;
+    color: white;
 }
 button, input {
     margin: 3px;
@@ -44,6 +45,7 @@ footer {
 }
 h5 {
     margin: 10px;
+    color: white;
 }
 a {
     margin: 10px;
