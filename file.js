@@ -32,7 +32,7 @@ function searchFunction(searchWord, pageIndex) {
                 pagesTotal = Math.ceil(searchResult.totalResults / 10);
                 document.getElementById("footer").style.display = "flex";
                 document.getElementById("totalText").innerHTML = pageIndex + " / " + pagesTotal;
-                curentPage = pageIndex;
+                curentPage = pageIndex;  document.getElementById("mainContainer").style.marginBottom = document.getElementById("footer").offsetHeight + "px";
             }
             else
                 waitH2.innerHTML = "No movies containing the word '" + searchWord + "' in their titles were found!";
